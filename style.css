@@ -84,9 +84,12 @@
         font-size: 28px;
         text-align: center;
     }
-
-    
-
+  
+    .aba-conteudo-titiulo-secundario{
+        text-align: center;
+        color: var(--verde);
+        text-transform: uppercase;
+    }
 
 
 
