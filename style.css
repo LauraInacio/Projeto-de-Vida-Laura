@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
+import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
 
 
     :root {
         --cor-de-fundo: #1E1E1E;
-        --verde: #ff3e9e;
+        --verde: #6FFF57;
         --branco: #FFFFFF;
         --botao-ativo: #3A375E;
         --botao-inativo: rgba(58, 55, 94, 0.5);
@@ -73,7 +73,7 @@
     }
 
     .aba-conteudo.ativo{
-        display: block;
+     display: block;   
     }
 
     .aba-conteudo{
@@ -84,7 +84,7 @@
         font-size: 28px;
         text-align: center;
     }
-  
+    
     .aba-conteudo-titulo-secundario{
         text-align: center;
         color: var(--verde);
@@ -92,22 +92,42 @@
     }
 
     .contador{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .contador-digito{
+     padding: 0 16px;
+     text-align: center;
+     min-width: 100px;
+    }
+
+    .contador-digito-numero{
+        font-size: 80px;
+        margin: 0;
+    }
+
+    .contador-digito-texto{
+        color: var(--verde);
         font-size: 20px;
-        text-align: center;
+        margin: 0;
     }
 
 
 
-    @media screen and (min-width: 768px){
-        .botoes{
-            display: flex;
-        }
-        .botao:first-child{
-            border-radius: 40px 0 0 0;
-        }
-        .botao:last-child{
-            border-radius: 0 40px 0 0;
-        }
-    }
-        
+
+
+
     
+    @media screen and (min-width: 768px){
+       .botoes{
+        display: flex;
+       } 
+       .botao:first-child{
+        border-radius: 40px 0 0 0;
+       }
+       .botao:last-child{
+        border-radius: 0 40px 0 0;
+       }
+    }
